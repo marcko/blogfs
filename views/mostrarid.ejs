@@ -1,0 +1,40 @@
+
+<head>
+	<meta charset="UTF-8">
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+	
+
+				<div class="jumbotron">
+
+				<div class="container-fluid">
+				<div class="row">
+						
+						<div class="col-xs-6 col-sm-6 col-md-6 col-md-offset-3 col-lg-6">
+									
+					
+				<% _.each(filearray, function(files){%>
+
+
+
+			<h2><a href=/mostrar/<%=files%>> <%=files%></a> </h2>
+
+
+	<%})%>
+						</div>
+
+				</div>
+			
+
+				</div>
+						
+				</div>
+		
+
+</body>
