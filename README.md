@@ -1,3 +1,4 @@
-# blogfs
+Practica 2
+----------------------
 
-a [Sails](http://sailsjs.org) application
+## Blog usando FS
