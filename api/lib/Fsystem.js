@@ -9,9 +9,9 @@ function Fsblog(){
 	
 };
 Fsblog.prototype.save = function(data, callback){
-	var self = this;
 	fs.writeFile(this.DIRECTORY+this.name+this.EXT, JSON.stringify(data, null,4),function(err){
-				return callback(err,data);
+			if(err) return callback(err,null);
+			return callback(null,data);
 	});
 };
 Fsblog.prototype.read = function(name, callback){
